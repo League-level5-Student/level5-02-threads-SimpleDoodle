@@ -19,6 +19,7 @@ public class SynchedSplitLoops {
 	static int counter = 0;
 	
 	public static void main(String[] args) {
+		synchronized
 		Thread t1 = new Thread(() -> {
 			for(int i = 0; i < 100000; i++) {
 				counter++;
